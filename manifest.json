@@ -1,0 +1,22 @@
+{
+  "name": "escape-Boss",
+  "short_name": "escape",
+  "start_url": "./",
+  "description": "Um joguinho simples de plataforma, onde você está em uma única plataforma e seu objetivo é dar olé o máximo de tempo possível para aumentar o score.",
+  "orientation": "portrait",
+  "display": "fullscreen",
+  "theme_color": "hsl(240,50%,50%)",
+  "background_color": "hsl(240,70%,50%)",
+  "icons": [
+    {
+      "src": "./icon-1200.png",
+      "sizes": "1200x1200",
+      "type": "image/png"
+    },
+    {
+      "src": "./icon-900.png",
+      "sizes": "900x900",
+      "type": "image/png"
+    }
+  ]
+}
