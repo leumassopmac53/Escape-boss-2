@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>EscapeBoss</title>
-
+<link rel="manifest" href="./manifest.js">
 <style>
   html, body {
     margin: 0;
@@ -33,7 +33,16 @@
 
 <canvas></canvas>
 
-<script src = "game.js"></script>
+<script src="./game.js"></script>
+<script src="./sw.js"></script>
+<script>
+  function rodaSW(){
+    if("serviceWorker" in navigator){
+      navigator.serviceWorker.register("./sw.js")
+    }
+  }
 
+  rodaSW();
+</script>
 </body>
 </html>
