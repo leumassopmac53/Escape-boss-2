@@ -1249,19 +1249,19 @@ let scene_test = {
     cameraPlayer.zoom = 0.5
     cameraPlayer.follow(player_Ent,0.05)
     logics.perseguir(enemy_Ent,player_Ent,
-    500)
+    300)
     anim.set(player_Ent.anim,"idle")
     if(input.down(Btn_3) || input.key("ArrowUp")
     || input.key("KeyW")){
       Btn_3.acao();
     }
     if(input.down(Btn_1) || input.key("ArrowRight") ||
-    input.key("KeyA")){
-      Btn_2.acao();
+    input.key("KeyB")){
+      Btn_1.acao();
     }
     if(input.down(Btn_2) || input.key("ArrowLeft")
-    || input.key("KeyD")){
-      Btn_1.acao();
+    || input.key("KeyA")){
+      Btn_2.acao();
     }
     if(input.press(Btn_2)){
       sound.music.play([
