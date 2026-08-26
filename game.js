@@ -1249,7 +1249,7 @@ let scene_test = {
     cameraPlayer.zoom = 0.5
     cameraPlayer.follow(player_Ent,0.05)
     logics.perseguir(enemy_Ent,player_Ent,
-    300)
+    500)
     anim.set(player_Ent.anim,"idle")
     if(input.down(Btn_3) || input.key("ArrowUp")
     || input.key("KeyW")){
