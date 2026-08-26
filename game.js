@@ -1249,7 +1249,7 @@ let scene_test = {
     cameraPlayer.zoom = 0.5
     cameraPlayer.follow(player_Ent,0.05)
     logics.perseguir(enemy_Ent,player_Ent,
-    100)
+    300)
     anim.set(player_Ent.anim,"idle")
     if(input.down(Btn_3) || input.key("ArrowUp")
     || input.key("KeyW")){
@@ -1257,11 +1257,11 @@ let scene_test = {
     }
     if(input.down(Btn_1) || input.key("ArrowRight") ||
     input.key("KeyA")){
-      Btn_1.acao();
+      Btn_2.acao();
     }
     if(input.down(Btn_2) || input.key("ArrowLeft")
     || input.key("KeyD")){
-      Btn_2.acao();
+      Btn_1.acao();
     }
     if(input.press(Btn_2)){
       sound.music.play([
@@ -1336,7 +1336,7 @@ let scene_test = {
      enemy_Ent.anim = anim.create(enemy.sprites, 0.5)
     enemy_Ent.x = 200
     enemy_Ent.y = 450
-    anim.set(enemy_Ent.anim,"loser")
+    anim.set(enemy_Ent.anim,"idleTutorial")
     anim.play(enemy_Ent.anim)
     anim.update(enemy_Ent.anim,0)
     enemy_Ent.superficie = scene_gameOver.chao
